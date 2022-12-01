@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapsLooks</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/css/animate.css">
+
+    <link rel="stylesheet" href="./css/css/style.css">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="containar">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <form>
+                    <h1 class="text-center  text-uppercase  fw-bold ">Sin Up</h1>
+                    <p class="text-center fs-5">Create Your Free Accounts</p>
+                    <h4 id="text">CapsLooks is ON</h4>
+                    <label>Name</label>
+                    <input class="p-1 rounded-3 w-100" type="text" name="" placeholder="Enter The Name" autofocus>
+                    <label>Email</label>
+                    <input class="p-1 rounded-3 w-100" type="Email" name="" placeholder="Enter The Email" autofocus>
+                    <label>Password</label>
+                    <input class="p-1 rounded-3 w-100" type="Password" name="" placeholder="Enter The Password" id="Caps" autofocus>
+
+                   <center> <button class="button mt-4 rounded-pill border-0 ">Submit</button></center>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var input = document.getElementById('Caps');
+        var text = document.getElementById('text');
+
+        input.addEventListener("keyup",function(event){
+        if(event.getModifierState("CapsLook"))
+            {
+                text.style.visibility= "visible";
+            }
+            else{
+                text.style.visibility = "hidden";
+            }
+
+        });
+    </script>
+
+
+
+
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./css/js/costom.js"></script>
+    <script src="./css/js/wow.min.js"></script>
+    
+</body>
+</html>
